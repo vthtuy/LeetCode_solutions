@@ -5,7 +5,6 @@ class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode(int x) { val = x; }
 }
 ```
 
@@ -32,3 +31,7 @@ class Solution {
 
 - Time Complexity: O(n)
 - Space Complexity: O(log n) if balanced tree. O(n) if not balanced.
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

@@ -11,16 +11,16 @@
 class Solution {
     public List<List<Integer>> subsets(int[] array) {
         if (array == null || array.length == 0) {
-            return new ArrayList<>();
+            return new ArrayList();
         }
-        List<List<Integer>> solutions = new ArrayList<>();
-        makeSubsets(array, 0, solutions, new ArrayList<>());
+        List<List<Integer>> solutions = new ArrayList();
+        makeSubsets(array, 0, solutions, new ArrayList());
         return solutions;
     }
 
     private void makeSubsets(int[] array, int i, List<List<Integer>> solutions, List<Integer> list) {
         if (i == array.length) {
-            solutions.add(new ArrayList<>(list));
+            solutions.add(new ArrayList(list));
             return;
         }
 
@@ -48,3 +48,7 @@ There are 2<sup>n</sup> subsets to generate, and each one takes `O(n)` time to c
 - [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)
 - [N-Queens](https://leetcode.com/problems/n-queens)
 - [Permutations](https://leetcode.com/problems/permutations) and [Permutations II](https://leetcode.com/problems/permutations-ii)
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

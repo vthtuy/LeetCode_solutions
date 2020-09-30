@@ -13,10 +13,10 @@
 class Solution {
     public List<List<String>> groupAnagrams(String[] array) {
         if (array == null || array.length == 0) {
-            return new ArrayList<>();
+            return new ArrayList();
         }
 
-        HashMap<String, List<String>> map = new HashMap<>();
+        Map<String, List<String>> map = new HashMap();
 
         for (String str : array) {
             String key = sortChars(str);
@@ -29,7 +29,7 @@ class Solution {
     }
 
     private String sortChars(String str) {
-        char[] content = str.toCharArray(); // Strings are immutable, which is why we convert to char[] first
+        char[] content = str.toCharArray(); // Strings are immutable, so we convert to char[]
         Arrays.sort(content);
         return new String(content);
     }
@@ -55,10 +55,10 @@ class Solution {
 class Solution {
     public List<List<String>> groupAnagrams(String[] array) {
         if (array == null || array.length == 0) {
-            return new ArrayList<>();
+            return new ArrayList();
         }
 
-        Map<Map<Character, Integer>, List<String>> map = new HashMap<>();
+        Map<Map<Character, Integer>, List<String>> map = new HashMap();
 
         for (String str : array) {
             Map<Character, Integer> key = createKey(str);
@@ -71,7 +71,7 @@ class Solution {
     }
 
     private Map<Character, Integer> createKey(String str) {
-        Map<Character, Integer> key = new HashMap<>();
+        Map<Character, Integer> key = new HashMap();
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
             key.merge(ch, 1, Integer::sum);
@@ -89,3 +89,7 @@ class Solution {
 
 - Time Complexity: O(nk), where `n` is the number of strings, and `k` is the length of the longest string.
 - Space Complexity: O(nk) for storing the strings.
+
+# Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

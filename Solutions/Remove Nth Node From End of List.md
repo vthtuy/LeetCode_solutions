@@ -5,6 +5,14 @@
 1. Walk that many steps and remove the node.
 1. Return the head of the list.
 
+### Provided Code
+
+```java
+class ListNode {
+    ListNode next;
+}
+```
+
 ### Solution
 
 ```java
@@ -44,3 +52,7 @@ class Solution {
 ### Follow-up Solution
 
 There is no benefit in solving this problem in 1 pass instead of 2 passes, as the time and space complexity remain the same. In both solutions, you would still have to traverse every element in the list.
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

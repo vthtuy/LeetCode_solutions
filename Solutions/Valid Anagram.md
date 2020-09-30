@@ -12,7 +12,7 @@ class Solution {
         if (s.length() != t.length()) {
             return false;
         }
-        HashMap<Character, Integer> map = new HashMap<>();
+        Map<Character, Integer> map = new HashMap();
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
             map.merge(ch, 1, Integer::sum);
@@ -33,3 +33,7 @@ class Solution {
 
 -  Time Complexity: O(n)
 - Space Complexity: O(1), since our HashMap has a maximum size corresponding either to 256 ASCII characters, or to about 1 million Unicode characters.
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

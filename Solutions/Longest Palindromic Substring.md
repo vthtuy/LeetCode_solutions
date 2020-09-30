@@ -71,6 +71,12 @@ class Solution {
 -  Time Complexity: O(n) - but difficult to prove/explain. `i` in the outer for loop moves forward `n` times. The `while` loop does an amortized `O(1)` amount of work.
 - Space Complexity: O(n)
 
+
 ### References
 
 - [Code derived from here](https://algs4.cs.princeton.edu/53substring/Manacher.java.html)
+
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

@@ -52,3 +52,7 @@ public class Solution {
 
 1. [Leetcode's official solution "Approach 4: Dynamic Programming with Binary Search"](https://leetcode.com/problems/longest-increasing-subsequence/solution/) - Explanation was confusing, but example and code made sense
 1. [Discussion Solution](https://leetcode.com/problems/longest-increasing-subsequence/discuss/74824) - got code from here
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

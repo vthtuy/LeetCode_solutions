@@ -46,3 +46,7 @@ boolean isCandidateValid(int[] array, int candidate) {
     return count * 2 > array.length;
 }
 ```
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

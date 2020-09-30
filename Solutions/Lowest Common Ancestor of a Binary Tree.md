@@ -17,13 +17,9 @@ Notice this is __not a binary search tree__. If it was, it would be equivalent t
 ### Provided Code
 
 ```java
-public class TreeNode {
-    int val;
+class TreeNode {
     TreeNode left;
     TreeNode right;
-    TreeNode(int x) {
-        val = x;
-    }
 }
 ```
 
@@ -60,3 +56,7 @@ class Solution {
 
 -  Time Complexity: O(n) since we may have to search all the nodes.
 - Space Complexity: O(log n) if balanced tree, O(n) otherwise. The space complexity is due to recursion.
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

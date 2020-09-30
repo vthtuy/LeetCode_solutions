@@ -64,3 +64,7 @@ class Solution {
 ### References
 
 - Solution is from [Geek for Geeks - Ugly Numbers](https://www.geeksforgeeks.org/ugly-numbers/) Method 2, which is also the solution most liked on LeetCode
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

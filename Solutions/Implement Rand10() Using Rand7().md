@@ -82,3 +82,7 @@ class Solution extends SolBase {
 ### Follow-up Solution
 
 Reducing the number of calls to `rand7()` is not very beneficial, as the runtime will still be `O(1)` average case, `O(∞)` worst case
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

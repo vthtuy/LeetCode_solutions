@@ -8,7 +8,7 @@
 ```java
 class Solution {
     public List<String> generateParenthesis(int n) {
-        List<String> solutions = new ArrayList<>();
+        List<String> solutions = new ArrayList();
         addParenthesis(new char[n * 2], 0, n, n, solutions);
         return solutions;
     }
@@ -40,3 +40,7 @@ A `char[]` was used instead of a `StringBuffer` to remove necessity of including
 - Space Complexity: O(2<sup>n</sup>)
 
 However, the official LeetCode solutions there is a very difficult mathematical proof to get a tighter bound on the time/space complexity, by using "Catalan" numbers. You are not expected to know this for an interview.
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

@@ -56,9 +56,9 @@ class Solution {
         if (n < 0) {
             return 0;
         }
-        Set<Integer> cols = new HashSet<>(); // columns   |
-        Set<Integer>   d1 = new HashSet<>(); // diagonals \
-        Set<Integer>   d2 = new HashSet<>(); // diagonals /
+        Set<Integer> cols = new HashSet(); // columns   |
+        Set<Integer>   d1 = new HashSet(); // diagonals \
+        Set<Integer>   d2 = new HashSet(); // diagonals /
         placeQueens(n, 0, cols, d1, d2);
         return count;
     }
@@ -105,3 +105,8 @@ Time Complexity: `O(n!)` due to the size of our recursion tree
 ### Space Complexity
 
 O(n), as that is the maximum depth of our recursion, and is also the size of each `HashSet` we use.
+
+### Links
+
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

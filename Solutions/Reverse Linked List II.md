@@ -24,11 +24,7 @@ We want to reverse 2->3->4 to get
 
 ```java
 class ListNode {
-    int val;
     ListNode next;
-    ListNode(int x) {
-        val = x;
-    }
 }
 ```
 
@@ -83,3 +79,7 @@ For `while (curr != null && numReverses-- > 0)` above, `curr` will never be null
 
 -  Time Complexity: O(n)
 - Space Complexity: O(1)
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

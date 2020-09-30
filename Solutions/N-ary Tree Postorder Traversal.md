@@ -12,7 +12,7 @@ public class Node {
 ```java
 class Solution {
     public List<Integer> postorder(Node root) {
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList();
         postorder(root, list);
         return list;
     }
@@ -36,3 +36,7 @@ class Solution {
 ### Notes
 
 The follow-up question asks us for an iterative solution, but there is no benefit to that solution as neither the time or space complexity is improved by solving the problem iteratively.
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

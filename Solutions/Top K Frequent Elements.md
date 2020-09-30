@@ -1,8 +1,10 @@
 ### Algorithm
 
-1. Create HashMap of number frequencies. Frequency = # of times a number appears in array.
+1. Create `HashMap` of number frequencies. Frequency = # of times a number appears in array.
 1. Create buckets, 1 for each possible frequency. Fill buckets with numbers from input, based on their frequency.
 1. To get the most frequent elements, loop through the buckets in descending order.
+
+Edge case: Two numbers can be tied for more frequent element. The problem doesn't say what to do in this case, so you should ask the interviewer about this.
 
 ### Solution
 
@@ -13,12 +15,12 @@ class Solution {
             return Collections.<Integer>emptyList();
         }
 
-        HashMap<Integer, Integer> map = new HashMap<>();
+        Map<Integer, Integer> map = new HashMap();
         for (int num : nums) {
             map.merge(num, 1, Integer::sum);
         }
 
-        List<List<Integer>> buckets = new ArrayList<>(nums.length + 1); // wont use 0th bucket
+        List<List<Integer>> buckets = new ArrayList(nums.length + 1); // wont use 0th bucket
         for (int i = 0; i < nums.length + 1; i++) {
             buckets.add(new ArrayList<Integer>());
         }
@@ -29,17 +31,21 @@ class Solution {
             bucket.add(num);
         }
 
-        List<Integer> solution = new ArrayList<>();
+        List<Integer> solution = new ArrayList();
         for (int i = buckets.size() - 1; i >= 0 && solution.size() < k; i--) {
             List<Integer> bucket = buckets.get(i);
             solution.addAll(bucket);
         }
-        return solution;
+        return solution.subList(0, k); // needed since above loop can add more than k elements into list
     }
 }
 ```
 
 ### Time/Space Complexity
 
-- Time Complexity: O(n)
+-  Time Complexity: O(n)
 - Space Complexity: O(n)
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

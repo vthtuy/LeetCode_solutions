@@ -14,8 +14,8 @@
 ```java
 class RandomizedSet {
     Random rand = new Random();
-    List<Integer> list = new ArrayList<>();
-    Map<Integer, Integer> valToInd = new HashMap<>();
+    List<Integer> list = new ArrayList();
+    Map<Integer, Integer> valToInd = new HashMap();
 
     public boolean insert(int num) {
         if (valToInd.containsKey(num)) {
@@ -70,3 +70,7 @@ public boolean contains(int num) {
 
 - Time Complexity: `O(1)` for insert(), remove(), getRandom(), contains(). Technically it's "amortized O(1)" time, since that's the runtime for adding to `ArrayList` or `HashMap` in Java.
 - Space Complexity: `O(1)` for each added element
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

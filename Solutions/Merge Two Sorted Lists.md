@@ -4,7 +4,9 @@
 class ListNode {
     int val;
     ListNode next;
-    ListNode(int x) { val = x; }
+    ListNode(int x) {
+        val = x;
+    }
 }
 ```
 
@@ -19,8 +21,8 @@ class Solution {
             return currA;
         }
 
-        ListNode result = new ListNode(0); // dummy/placeholder ListNode
-        ListNode n = result;
+        ListNode dummy = new ListNode(0);
+        ListNode n = dummy;
         while (currA != null && currB != null) {
             if (currA.val < currB.val) {
                 n.next = currA;
@@ -32,14 +34,10 @@ class Solution {
             n = n.next;
         }
 
-        // Attach the remaining elements
-        if (currA == null) {
-            n.next = currB;
-        } else {
-            n.next = currA;
-        }
+        // attach remaining elements
+        n.next = (currA == null) ? currB : currA;
 
-        return result.next;
+        return dummy.next;
     }
 }
 ```
@@ -48,3 +46,7 @@ class Solution {
 
 - Time Complexity: O(n + m)
 - Space Complexity: O(1)
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

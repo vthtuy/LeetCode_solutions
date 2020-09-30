@@ -56,3 +56,7 @@ Now that we no longer have a carry, our algorithm finishes, and we return 'sum' 
 ### Additional Notes
 
 Using AND and XOR operators is literally how addition is done in circuits, using a [Half Adder](https://en.wikipedia.org/wiki/Adder_%28electronics%29#Half_adder)
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

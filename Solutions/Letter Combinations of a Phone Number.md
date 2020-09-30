@@ -26,9 +26,9 @@ class Solution {
 
     public List<String> letterCombinations(String digits) {
         if (digits == null || digits.length() == 0) {
-            return new ArrayList<>();
+            return new ArrayList();
         }
-        List<String> solutions = new ArrayList<>();
+        List<String> solutions = new ArrayList();
         makeStrings(digits, 0, solutions, new StringBuffer());
         return solutions;
     }
@@ -63,3 +63,7 @@ There will be 3<sup>M</sup> * 4<sup>N</sup> solutions, and each one will take O(
 - [Permutations](https://leetcode.com/problems/permutations) and [Permutations II](https://leetcode.com/problems/permutations-ii)
 - [Subsets](https://leetcode.com/problems/subsets) and [Subsets II](https://leetcode.com/problems/subsets-ii)
 - [N-Queens](https://leetcode.com/problems/n-queens)
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

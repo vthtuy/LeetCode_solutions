@@ -10,7 +10,7 @@ public class ListNode {
     int val;
     ListNode next;
     ListNode(int x) {
-      val = x;
+        val = x;
     }
 }
 ```
@@ -85,3 +85,7 @@ Our code destroyed the ordering of the original list. If we wanted to preserve t
 1. Deep copy list.
 1. Reverse it.
 1. Compare it to original.
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

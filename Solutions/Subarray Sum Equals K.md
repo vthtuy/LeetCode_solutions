@@ -3,14 +3,14 @@
 1. Use Dynamic Programming. For each element in array, save the sum from beginning of array until that element.
     - key: sum
     - value: number of contiguous arrays, starting at beginning of array, that sum to "key: sum"
-1. Our `HashMap` tells us `SUM[0...i]`. Our current `sum` gives us `SUM[0...j]`. So subtraction gives us `SUM[0...j] - SUM[0...i] = SUM[i...j]`. Each `SUM[i...j] == k` gives us 1 solution.
+1. Our `HashMap` tells us `SUM[0...i]`. Our current `sum` gives us `SUM[0...j]`. So subtraction gives us `SUM[0...j] - SUM[0...i] = SUM(i...j]` (the parenthesis is there since `i` is not included in that range). Each `SUM(i...j] == k` gives us 1 solution.
 
 ### Solution
 
 ```java
 class Solution {
     public int subarraySum(int[] nums, int k) {
-        HashMap<Integer, Integer> savedSum = new HashMap<>();
+        Map<Integer, Integer> savedSum = new HashMap();
         savedSum.put(0, 1);
         int sum = 0;
         int result = 0;        
@@ -28,3 +28,11 @@ class Solution {
 
 - Time Complexity: O(n)
 - Space Complexity: O(n)
+
+### Similar Problems
+
+[Path Sum III](https://leetcode.com/problems/path-sum-iii)
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

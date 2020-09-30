@@ -5,7 +5,7 @@
 ```java
 class Solution {
     public boolean isPowerOfTwo(int n) {
-        if (n <= 0) {
+        if (n < 1) {
             return false;
         }
         return (n & (n - 1)) == 0;
@@ -14,6 +14,7 @@ class Solution {
 ```
 
 ### Example
+
 Let n = 2^5 = 32. In binary, we have:
 
 ```
@@ -26,6 +27,7 @@ n & (n - 1) = 00000000
 
 -  Time Complexity: O(1)
 - Space Complexity: O(1)
+
 
 # Solution 2
 
@@ -44,7 +46,7 @@ n & (n - 1) = 00000000
 
 ```java
 public boolean isPowerOfTwo(int n) {
-    if (n <= 0) {
+    if (n < 1) {
         return false;
     }
     return n > 0 && Integer.bitCount(n) == 1;
@@ -55,3 +57,8 @@ public boolean isPowerOfTwo(int n) {
 
 -  Time Complexity: O(1)
 - Space Complexity: O(1)
+
+
+# Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

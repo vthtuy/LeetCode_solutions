@@ -1,12 +1,12 @@
 ### Provided Code
 
 ```java
-public class TreeNode {
+class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
     TreeNode(int x) {
-      val = x;
+        val = x;
     }
 }
 ```
@@ -39,3 +39,7 @@ class Solution {
 
 -  Time Complexity: O(n)
 - Space Complexity: O(n) since we're creating a Binary Search Tree
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

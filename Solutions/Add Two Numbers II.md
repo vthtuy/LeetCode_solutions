@@ -21,13 +21,13 @@ public class ListNode {
 class Solution {
     public ListNode addTwoNumbers(ListNode m, ListNode n) {
         if (m == null) {
-            return m;
-        } else if (n == null) {
             return n;
+        } else if (n == null) {
+            return m;
         }
 
-        Deque<Integer> deque1 = new ArrayDeque<>(); // use as a stack
-        Deque<Integer> deque2 = new ArrayDeque<>(); // use as a stack
+        Deque<Integer> deque1 = new ArrayDeque(); // use as a stack
+        Deque<Integer> deque2 = new ArrayDeque(); // use as a stack
 
         while (m != null) {
             deque1.push(m.val);
@@ -63,3 +63,7 @@ class Solution {
 
 -  Time Complexity: O(m + n)
 - Space Complexity: O(m + n)
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

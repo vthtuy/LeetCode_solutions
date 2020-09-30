@@ -16,13 +16,10 @@
 ### Provided Code
 
 ```java
-public class TreeNode {
+class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode(int x) {
-        val = x;
-    }
 }
 ```
 
@@ -53,3 +50,7 @@ class Solution {
 
 -  Time Complexity: O(log n) if balanced tree, O(n) otherwise
 - Space Complexity: O(1)
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

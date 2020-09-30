@@ -1,13 +1,10 @@
 ### Provided Code
 
 ```java
-public class TreeNode {
+class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode(int x) {
-      val = x;
-    }
 }
 ```
 
@@ -16,12 +13,12 @@ public class TreeNode {
 ```java
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList();
         inorderTraversal(root, list);
         return list;
     }
 
-    private static void inorderTraversal(TreeNode node, List<Integer> list) {
+    private void inorderTraversal(TreeNode node, List<Integer> list) {
         if (node != null) {
             inorderTraversal(node.left, list);
             list.add(node.val);
@@ -39,3 +36,7 @@ class Solution {
 ### Notes
 
 The follow-up question asks us for an iterative solution, but there is no benefit to that solution as neither the time or space complexity is improved by solving the problem iteratively.
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

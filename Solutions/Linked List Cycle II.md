@@ -12,12 +12,7 @@
 
 ```java
 class ListNode {
-    int val;
     ListNode next;
-    ListNode(int x) {
-        val = x;
-        next = null;
-    }
 }
 ```
 
@@ -50,3 +45,7 @@ public class Solution {
 
 -  Time Complexity: O(n), where n is number of nodes in List.
 - Space Complexity: O(1)
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

@@ -12,12 +12,12 @@ class Solution {
             return false; // odd length Strings are not balanced
         }
 
-        HashMap<Character, Character> map = new HashMap<>();
+        Map<Character, Character> map = new HashMap();
         map.put('(', ')');
         map.put('[', ']');
         map.put('{', '}');
 
-        ArrayDeque<Character> deque = new ArrayDeque<>(); // use deque as a stack
+        Deque<Character> deque = new ArrayDeque(); // use deque as a stack
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
             if (map.containsKey(ch)) {
@@ -35,3 +35,7 @@ class Solution {
 
 - Time Complexity: O(n)
 - Space Complexity: O(n)
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)

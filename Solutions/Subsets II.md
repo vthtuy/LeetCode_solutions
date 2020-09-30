@@ -11,17 +11,17 @@
 class Solution {
     public List<List<Integer>> subsetsWithDup(int[] array) {
         if (array == null || array.length == 0) {
-            return new ArrayList<>();
+            return new ArrayList();
         }
         Arrays.sort(array);
-        Set<List<Integer>> solutions = new HashSet<>();
-        makeSubsets(array, 0, solutions, new ArrayList<>());
-        return new ArrayList<>(solutions);
+        Set<List<Integer>> solutions = new HashSet();
+        makeSubsets(array, 0, solutions, new ArrayList());
+        return new ArrayList(solutions);
     }
 
     private void makeSubsets(int[] array, int i, Set<List<Integer>> solutions, List<Integer> list) {
         if (i == array.length) {
-            solutions.add(new ArrayList<>(list));
+            solutions.add(new ArrayList(list));
             return;
         }
 
@@ -42,3 +42,7 @@ There are 2<sup>n</sup> subsets to generate, and each one takes `O(n)` time to c
 
 -  Time Complexity: O(n * 2<sup>n</sup>)
 - Space Complexity: O(n * 2<sup>n</sup>)
+
+### Links
+
+- [github.com/RodneyShag](https://github.com/RodneyShag)
